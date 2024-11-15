@@ -23,7 +23,6 @@ function addBookToLibrary(book){
 
 addBookButton.addEventListener("click", ()=>{
     bookAppenderModal.showModal();
-    console.log(library)
 })
 
 let i = 0;
@@ -63,7 +62,6 @@ function addListenerToRemoveButton(button) {
 function addListenerToisReadButton(button){
     button.addEventListener("click", ()=>{
         let bookIndex = button.parentNode.getAttribute("data-index");
-        console.log(bookIndex)
         if(button.innerText == "Read") {
             library[bookIndex].isRead = false;
             button.innerText = "Not read yet";
@@ -73,14 +71,5 @@ function addListenerToisReadButton(button){
             button.innerText = "Read";
         }
         button.setAttribute("listener", true);
-        console.log("yeyey")
     })
 }
-
-
-
-
-
-document.addEventListener("keydown", e => {
-    if(e.code === "ArrowUp") console.log(library);
-})
