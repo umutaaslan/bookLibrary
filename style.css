@@ -106,13 +106,37 @@ footer {
     gap: 20px;
 }
 
-.flex-main div:not(.item-container) {
+.item-container > div {
     height: 300px;
     width: 300px;
     border: 1px solid purple;
+    display: flex;
+    flex-direction: column;
+    font-size: large;
+    font-weight: 600;
+    padding: 1.5rem;
+    gap: 12%;
 }
 
+.removeButton {
+    margin-top: auto;
+}
 
+.book-appender-modal {
+    margin: auto;
+    border: 3px solid black;
+    border-radius: 2px;
+    padding: 2rem;
+}
+
+.book-appender-modal > .book-appender-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.book-appender-modal > .book-appender-form input {
+    margin-bottom: 1.5rem;
+}
 
 
 main > * {border: 1px solid red;}
