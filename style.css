@@ -127,6 +127,8 @@ footer {
     border: 3px solid black;
     border-radius: 2px;
     padding: 2rem;
+    transition: all 2s ease-in-out;
+
 }
 
 .book-appender-modal > .book-appender-form {
@@ -138,9 +140,7 @@ footer {
     margin-bottom: 1.5rem;
 }
 
-
-main > * {border: 1px solid red;}
-.container > * {
-    border: 1px solid red;
+.book-appender {
+  padding: 1rem 0;
 }
-  
+
